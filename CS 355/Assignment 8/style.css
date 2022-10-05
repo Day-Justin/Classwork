@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: "Monseratt", sans-serif;
+}
+
+html{
+  background-color: #777777;
+}
+
+h1{
+  /*padding-top: 20%;*/
+  color: #000000;
+  text-align: center;
+}
+
+h1>span{
+  border:2px dotted gold;
+}
+
+p{
+  color: #f9f9f9;
+}
+
+section h2 h1{
+  font-family: "Monseratt", sans-serif;
+  text-align: center;
+  height: 200px;
+  color: white;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------- navbar -----------------------------------------*/
+.dropdown {
+  float: left;
+  text-align: center;
+}
+a {
+  text-align: center;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #34495e;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #eeeeee;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*===================== browser======================== */
+
+.browser section{
+  border: 1px dashed white;
+  margin: 20px;
+}
+.browser #focused{
+  color: magenta;
+  background-color: #f9f9f9;
+}
+
+.browser section h2{
+  text-align: center;
+  font-family: "Arial", "Monospaced", sans-serif;
+  margin-top: 8px;
+}
+
+section .content{
+  box-sizing: border-box;
+  margin:10px;
+  padding:5px;
+  border: 2px solid orange;
+  font-family: "Times New Roman", "Monseratt", sans-serif;
+  text-align: center;
+}
+section .content p{
+  padding: 10px;
+}
+/*==================Last Project Style=========================*/
+.parse_form{
+  display: block;
+  color:black;
+  text-align: center;
+}
+.parse_form form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.parse_form input[type=text] {
+  padding: 10px;
+  margin:10px 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  border-radius:10px;
+}
+.form-submit-button {
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+}
+#last_project h1{
+  color: white;
+  margin-bottom: 30px;
+}
+#last_project h1 span{
+  background-color: black;
+}
+#last_project table, th, td{
+  border: 1px solid;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+#last_project tr:nth-child(even){
+  background-color: white;
+}
+#last_project tr:nth-child(odd){
+  background-color: #d3d3d3;
+}
+/*==================Contact.html=========================*/
+.contact-section{
+  background-size:cover;
+  background: #222629;
+  padding: 40px 0;
+}
+
+.contact-section h1{
+  text-align: center;
+  color: #E0E0E0;
+}
+
+.border{
+  width:100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+#contact span{
+  border-bottom: white;
+  background-color: blue;
+}
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.contact-form-text:hover{
+  box-shadow: : 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+  resize: none;
+  height:120px;
+}
+
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
