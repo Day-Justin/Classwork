@@ -1,0 +1,3 @@
+interface Vote {
+  void castVote();
+}
