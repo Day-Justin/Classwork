@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>update</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="one">
+    <div class="two">
+        <h1>Side Bar</h1>
+        <ul>
+            <li><a href="{{url_for('index')}}">Index</a></li>
+            <li><a href="{{url_for('display')}}">Display</a></li>
+            <li><a href="{{url_for('show_states')}}">States</a></li>
+            <li class="active"><a href="{{url_for('update')}}">Update</a></li>
+            <li><a href="{{url_for('logout')}}">Log out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="topbar">
+            <h2>Welcome!! You are in Update Page!! </h2>
+        </div></br></br>
+        <div class="contentbar">
+            <h1>Fill Your Details to Update</h1></br>
+            <form action="{{ url_for('update') }}" method="post" autocomplete="off">
+                <div class="msg">{{ msg }}</div>
+                <input type="text" name="fname" placeholder="Enter Your FIrst Name" class="textbox" id="fname" required></br></br>
+                <input type="text" name="lname" placeholder="Enter Your Last Name" class="textbox" id="lname" required></br></br>
+                <input type="text" name="login" placeholder="Enter Your Username" class="textbox" id="login" required></br></br>
+                <input type="password" name="password" placeholder="Enter Your Password" class="textbox" id="password" required></br></br>
+                <input type="email" name="email" placeholder="Enter Your Email ID" class="textbox" id="email" required></br></br>
+                <input type="submit" class="btn" value="Update">
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

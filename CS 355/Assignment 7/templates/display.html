@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>display</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="one">
+    <div class="two">
+        <h1>Side Bar</h1>
+        <ul>
+            <li><a href="{{url_for('index')}}">Index</a></li>
+            <li><a href="{{url_for('show_states')}}">States</a></li>
+            <li class="active"><a href="{{url_for('display')}}">Display</a></li>
+            <li><a href="{{url_for('update')}}">Update</a></li>
+            <li><a href="{{url_for('logout')}}">Log out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="topbar">
+            <h2>Welcome!! You are in Display Page!! </h2>
+        </div>  </br>
+        <div class="contentbar">
+            <h1>Your Details</h1>    </br>
+            {% block content %}
+                <div class="border">
+                    <table class="worddark"></br></br></br></br>
+                        <tr>
+                            <td>First Name:</td>
+                            <td>{{ user_row[1] }}</td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td>{{ user_row[2] }}</td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td>{{ user_row[3] }}</td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td>. . .</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>{{ user_row[5] }}</td>
+                        </tr>
+                    </table>
+                </div>
+            {% endblock %}
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

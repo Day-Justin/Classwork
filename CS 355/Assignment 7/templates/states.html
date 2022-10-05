@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>states</title>
+    <link rel="stylesheet" href="../static/StatesStyle.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<h1>Justin's Flask Based States Page</h1>
+<div class="one">
+    <div class="two">
+        <h1>Side Bar</h1>
+        <ul>
+            <li class="active"><a href="{{url_for('index')}}">Index</a></li>
+            <li><a href="{{url_for('show_states')}}">States</a></li>
+            <li><a href="{{url_for('display')}}">Display</a></li>
+            <li><a href="{{url_for('update')}}">Update</a></li>
+            <li><a href="{{url_for('logout')}}">Log out</a></li>
+        </ul>
+    </div>
+    <div class='data'>
+        <table>
+            <tr>
+                {% for header in headers %}
+                    <th>{{ header }}</th>
+                {% endfor %}
+            </tr>
+            {% for row in data %}
+                <tr>
+                    {% for cell in row[:3] %}
+                        <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+    </div>
+    </table>
+</body>
+</html>

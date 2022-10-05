@@ -1,0 +1,33 @@
+body {
+  background-color: white;
+}
+h1 {
+  color: Blue;
+  text-align: center;
+  /*background-color: blue;*/
+}
+p {
+  color: red;
+}
+.data{
+  margin-left: auto;
+  margin-right: auto;
+}
+table, th, td{
+  border: 1px solid;
+  color: black;
+  align-content: center;
+}
+th{
+  color: white;
+  background-color: blue;
+}
+tr{
+  text-align: center;
+}
+tr:nth-child(even){
+  background-color: red;
+}
+tr:nth-child(odd){
+  background-color: white;
+}
