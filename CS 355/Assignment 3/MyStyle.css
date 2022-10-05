@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+h1 {
+  color: white;
+  background-color: blue;
+}
+p {
+  color: red;
+}
+table, th, td{
+  border: 1px solid;
+}
+th{
+  color: blue;
+  blackground-color: blue;
+}
+tr:nth-child(even){
+  background-color: red;
+}
+tr:nth-child(odd){
+  background-color: white;
+}
