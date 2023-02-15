@@ -5,3 +5,5 @@ Collection of coding course work
 - CS 370 - Software Engineering
 - CS 323 - Algorithms
 - CS 334 - Data Mining
+- CS 352 - Cryptography
+- CS 348 - Data Communications
