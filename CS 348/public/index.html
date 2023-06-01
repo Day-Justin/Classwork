@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Local Leaflett Files-->
+    <link rel="stylesheet" href="/map/leaflet.css" />
+    <script src="/map/leaflet.js"></script>
+
+    <!-- Online Leaflett Files 
+      //Include the Leaflet CSS file 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
+      //Include the Leaflet JavaScript file 
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script> 
+    -->
+
+    <title>QC-LFG</title>
+  </head>
+  <body>
+    <!--Banner Logo-->
+    <header>
+      <div class ="currentGroup">
+        <h2>Current Group: </h2>
+        <h3 id="currentGroupText">QC</h3>
+      </div>
+      <div class ="logo">
+        <h1>QC-LFG</h1>
+      </div>
+      <div class="userName">
+        <h2>Username: </h2>
+        <h3 id="userNameText">Name</h3>
+      </div>
+    </header>
+
+      <!--Top Container-->
+      <div class="container" id="topContainer">
+
+        <!--Rooms Container-->
+        <div class="rooms-container topSection">
+              <h2>Groups</h2>
+          <table id="room-list">
+            <tbody>
+              <!-- Room entries added dynamically using JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <!--Map-->
+        <div id="map" class="topSection"></div>
+
+        <!--Users Container-->
+        <div class="users-container topSection">
+            <h2>Users</h2>
+          <table id="user-list">
+            <tbody>
+              <!-- User entries added dynamically using JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="lowerContainers">
+        <!--Group Chat Box-->
+        <div class="chatBox">
+          <div class="container" id="bottomContainer">
+            <div id="messageContainer">
+              <ul id="messages"></ul>
+            </div>
+          </div>
+
+          <!--Group Message Send Form Container-->
+          <div id="messageSendContainer">
+            <form id="form" action="">
+              <input id="input" autocomplete="off" /><button>Send</button>
+            </form>
+          </div>
+        </div>
+
+        <!--PM Chat Box-->
+        <div class="pmBox">
+          <div class="pm_container" id="pm_bottomContainer">
+            <div class="pm_messageContainer">
+              <ul class="pm_messages" id="pm_messages"></ul>
+            </div>
+          </div>
+
+          <!--PM Send Form Container-->
+          <div class="pm_messageSendContainer">
+            <form class="pm_form" action="">
+              <input type="text" class="pm_input" autocomplete="off" required>
+              <button>Send</button>
+            </form>
+          </div>
+        </div>
+
+        <!--PM Chat Toggle Button-->
+        <button class="togglePM"></button>
+
+       </div>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
